@@ -2,3 +2,8 @@ name = "chikeler-kun"
 compatibility_date = "2024-09-01"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
+
+[vars]
+NEXT_PUBLIC_SUPABASE_URL = "https://zhbtybnxuborfngjahuv.supabase.co"
+NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpoYnR5Ym54dWJvcmZuZ2phaHV2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYzMjA2MzAsImV4cCI6MjEwMTg5NjYzMH0.a_E1OfB8F-JzEWImvRlsWaHrnzjNqYQHmEIGm1jebTg"
+
