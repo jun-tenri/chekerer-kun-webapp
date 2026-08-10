@@ -16,8 +16,9 @@ async function getTrial(id: string): Promise<Trial | null> {
   return data as unknown as Trial;
 }
 
-export default async function TrialDetailPage({ params }: { params: { id: string } }) {
-  const t = await getTrial(params.id);
+export default async function TrialDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const t = await getTrial(id);
   if (!t) notFound();
 
   return (
