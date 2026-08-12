@@ -2,6 +2,8 @@ import './globals.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
+export const runtime = 'edge';
+
 export const metadata = {
   title: 'チケラーくんが行く！',
   description: 'アメリカの日本人向け治験を、まとめて、リアルタイムに。',
