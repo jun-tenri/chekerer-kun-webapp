@@ -3,7 +3,7 @@ import { Trial } from '@/lib/types';
 import TrialList from '@/components/TrialList';
 
 export const runtime = 'edge';
-export const revalidate = 300; // 5分ごとに再生成(頻繁すぎるDBアクセスを避ける)
+export const dynamic = 'force-dynamic'; // Cloudflare Pages(next-on-pages)はISR(revalidate)未対応のため、毎回動的に取得する
 
 async function getPublishedTrials(): Promise<Trial[]> {
   const { data, error } = await supabase
